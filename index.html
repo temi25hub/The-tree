@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tree Kitchen</title>
 
-    <!-- Splide Slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
@@ -16,7 +15,7 @@
 
 <div class="wrapper">
 
-    <!-- HEADER -->
+
     <header class="header">
         <aside class="logo">
             <img src="img/logo.jpg" alt="The Tree Kitchen Logo">
@@ -31,20 +30,21 @@
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contacts</a>
+                <button>Order</button>
             </nav>
         </aside>
     </header>
 
-    <!-- SPLIDE SLIDER -->
+
     <div class="splide slider">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide"><img src="img/puffpuff.jpg" alt=""></li>
                 <li class="splide__slide"><img src="img/peppersoup.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/fried plantain.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/friedplantain.jpg" alt=""></li>
                 <li class="splide__slide"><img src="img/suya.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/Jollof-RIce.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/Egusi.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/JollofRIce.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/Egusi.jpg" alt=""></li>             
             </ul>
         </div>
     </div>
@@ -57,44 +57,61 @@
         }).mount();
     </script>
 
-    <!-- MAIN CONTENT -->
-    <section class="content">
 
-        <main class="products">
-            <article>
-                <h2>Our Best Sellers</h2>
-                <img src="img/combo 1.jpg" alt="">
-                <p>One portion of jollof rice, plantain and goatmeat - 250kr</p>
-            </article>
+    <main>
+        <div class="side-panel">
+            <section class="menu">
+                <h3>FOOD MENU</h3>
+                <ul>
+                    <li><a href="#">Jollof rice</a></li>
+                    <li><a href="#">Fried rice</a></li>
+                    <li><a href="#">Egusi soup</a></li>
+                    <li><a href="#">Fufu/Pounded yam</a></li>
+                    <li><a href="#">Peppersoup</a></li>
+                    <li><a href="#">Plantain</a></li>
+                    <li><a href="#">Fruity zobo drink</a></li>
+                </ul>
+            </section>
+            <aside class="menu-image">
+                <img src="img/new-image.png" alt="Food Image">
+            </aside>
+        </div>
+        <section class="headder">
+            <h2>Our Best Seller</h2>
+        </section>
 
-            <article>
-                <img src="img/suya 2.jpg" alt="">
-                <p>One portion of suya (5 skewers) - 200kr</p>
-            </article>
+        <div class="food-row">
+        <section class="one">
+            <aside class="orange">
+            <img src="img/combo1.jpg" alt="">
+            <p>One portion of jollof rice, plantain and meat- 200kr</p>
+            <a href="#" class="order-btn">Order</a>
+            </aside>
+        </section>
 
-            <article>
-                <img src="img/puffpuff pack.jpg" alt="">
-                <p>One portion puffpuff - 85kr</p>
-            </article>
-        </main>
+        <section class="two">
+            <aside class="gold">
+            <img src="img/suya2.jpg" alt="">
+            <p>One portion of suya(5 skewers)- 150kr</p>
+            <a href="#" class="order-btn">Order</a>
+            </aside>
+        </section>
 
-        <!-- RIGHT MENU -->
-        <aside class="menu">
-            <h3>FOOD MENU</h3>
-            <ul>
-                <li><a href="#">Jollof rice</a></li>
-                <li><a href="#">Fried rice</a></li>
-                <li><a href="#">Egusi soup</a></li>
-                <li><a href="#">Fufu/Pounded yam</a></li>
-                <li><a href="#">Peppersoup</a></li>
-                <li><a href="#">Plantain</a></li>
-                <li><a href="#">Fruity zobo drink</a></li>
-            </ul>
-        </aside>
+        <section class="three">
+            <aside class="silver">
+            <img src="img/puffpuffpack.jpg" alt="">
+            <p>One pack of puff- 100kr</p>
+            <a href="#" class="order-btn">Order</a>
+            </aside>
+        </section>
+        </div>
+    
+    
+        
+             
+    </main>
 
-    </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <section>
             <h4>Menu</h4>
