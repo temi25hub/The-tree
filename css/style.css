@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+}
+
+
+.header {
+    background: green;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/ span 6;
+}
+
+.header img {
+    width: 80px;
+}
+
+.header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.slider {
+    height: 350px;
+    margin-top: 10px;
+    grid-column: 1/ span 6;
+    grid-row: 2/ auto;
+}
+
+.slider img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+.content {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    grid-column: 1/ span 6;
+}
+
+
+.products {
+    flex: 2;
+}
+
+.products article {
+    background: goldenrod;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #ccc;
+    grid-column: 1/ span 4;
+    grid-row: 3/ auto;
+}
+
+.products article img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.menu {
+    flex: 1;
+    background: green;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    grid-column: 5/ span 1;
+    grid-row: 3/auto;
+}
+
+.menu h3 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer {
+    background: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    grid-column: 1/ span 6;
+    grid-row: 4/ auto;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 6px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media(max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
