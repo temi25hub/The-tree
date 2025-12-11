@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tree Kitchen</title>
 
+    <!-- Splide Slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
@@ -15,39 +16,38 @@
 
 <div class="wrapper">
 
-
+    <!-- HEADER -->
     <header class="header">
-        <aside class="logo">
+        <div class="logo">
             <img src="img/logo.jpg" alt="The Tree Kitchen Logo">
-        </aside>
+        </div>
 
-        <aside class="title">
-            <h1>The Tree Kitchen</h1>
-        </aside>
+        <h1 class="site-title">The Tree Kitchen</h1>
 
-        <aside class="nav">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contacts</a>
-                <button>Order</button>
-            </nav>
-        </aside>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contacts</a>
+            <button class="order-btn">Order</button>
+        </nav>
     </header>
 
 
-    <div class="splide slider">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide"><img src="img/puffpuff.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/peppersoup.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/friedplantain.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/suya.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/JollofRIce.jpg" alt=""></li>
-                <li class="splide__slide"><img src="img/Egusi.jpg" alt=""></li>             
-            </ul>
+    <!-- SLIDER -->
+    <section class="slider">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="img/puffpuff.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/peppersoup.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/friedplantain.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/suya.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/JollofRice.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/Egusi.jpg" alt=""></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
 
     <script>
         new Splide('.splide', {
@@ -58,67 +58,80 @@
     </script>
 
 
-    <main>
-        <div class="side-panel">
-            <section class="menu">
-                <h3>FOOD MENU</h3>
-                <ul>
-                    <li><a href="#">Jollof rice</a></li>
-                    <li><a href="#">Fried rice</a></li>
-                    <li><a href="#">Egusi soup</a></li>
-                    <li><a href="#">Fufu/Pounded yam</a></li>
-                    <li><a href="#">Peppersoup</a></li>
-                    <li><a href="#">Plantain</a></li>
-                    <li><a href="#">Fruity zobo drink</a></li>
-                </ul>
-            </section>
-            <aside class="menu-image">
-                <img src="img/new-image.png" alt="Food Image">
-            </aside>
-        </div>
-        <section class="headder">
-            <h2>Our Best Seller</h2>
+    <!-- SIDE PANEL -->
+    <aside class="side-panel">
+
+        <section class="menu card">
+            <h3>FOOD MENU</h3>
+            <ul>
+                <li><a href="#">Jollof rice</a></li>
+                <li><a href="#">Fried rice</a></li>
+                <li><a href="#">Egusi soup</a></li>
+                <li><a href="#">Fufu/Pounded yam</a></li>
+                <li><a href="#">Peppersoup</a></li>
+                <li><a href="#">Plantain</a></li>
+                <li><a href="#">Fruity zobo drink</a></li>
+            </ul>
         </section>
 
-        <div class="food-row">
-        <section class="one">
-            <aside class="orange">
+        <section class="Hours_mission card">
+            <h3>Opening Hours</h3>
+            <ul>
+                <li>Måndagar – 11:00–20:00</li>
+                <li>Tisdagar – 11:00–20:00</li>
+                <li>Onsdagar – 11:00–20:00</li>
+                <li>Torsdagar – Stängt</li>
+                <li>Fredagar – 11:00–23:00</li>
+                <li>Lördagar – 11:00–23:00</li>
+                <li>Söndagar – 12:00–19:00</li>
+            </ul>
+
+            <h3>Mission</h3>
+            <p>
+                Our mission is to elevate Nigerian cuisine by delivering exceptional quality, refined flavors, and top-tier service.  
+                We are dedicated to showcasing the richness of our culture through an elegant and memorable dining experience.
+            </p>
+        </section>
+
+    </aside>
+
+
+    <!-- BEST SELLERS -->
+    <section class="best-seller-title">
+        <h2>Our Best Sellers</h2>
+    </section>
+
+    <section class="food-row">
+
+        <article class="food-item card">
             <img src="img/combo1.jpg" alt="">
-            <p>One portion of jollof rice, plantain and meat- 200kr</p>
+            <p>One portion of jollof rice, plantain and meat – 200kr</p>
             <a href="#" class="order-btn">Order</a>
-            </aside>
-        </section>
+        </article>
 
-        <section class="two">
-            <aside class="gold">
+        <article class="food-item card">
             <img src="img/suya2.jpg" alt="">
-            <p>One portion of suya(5 skewers)- 150kr</p>
+            <p>One portion of suya (5 skewers) – 150kr</p>
             <a href="#" class="order-btn">Order</a>
-            </aside>
-        </section>
+        </article>
 
-        <section class="three">
-            <aside class="silver">
+        <article class="food-item card">
             <img src="img/puffpuffpack.jpg" alt="">
-            <p>One pack of puff- 100kr</p>
+            <p>One pack of puffpuff (10 pcs) – 100kr</p>
             <a href="#" class="order-btn">Order</a>
-            </aside>
-        </section>
-        </div>
-    
-    
-        
-             
-    </main>
+        </article>
+
+    </section>
 
 
+    <!-- FOOTER -->
     <footer class="footer">
         <section>
             <h4>Menu</h4>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="#">About us</a></li>
             </ul>
         </section>
 
@@ -127,7 +140,7 @@
             <address>
                 The Tree Kitchen <br>
                 Bergvägen 64 <br>
-                567 34, Nyköping <br>
+                567 34 Nyköping <br>
                 thetreekitchen@gmail.com
             </address>
         </section>
