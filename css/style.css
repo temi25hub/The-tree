@@ -28,7 +28,7 @@ img {
 }
 
 .card {
-    background: rgba(10, 153, 10, 0.171);
+    background: green;
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
